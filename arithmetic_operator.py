@@ -1,0 +1,10 @@
+a = int( input("Input the first number: "))
+b = int( input("Input the second number: "))
+
+print("Addition Operator: ", a, "+", b, "=", (a + b))
+print("Substraction Operator: ", a, "-", b, "=", (a - b))
+print("Multiple Operator: ", a, "x", b, "=", (a * b))
+print("Divison Operator: ", a, "/", b, "=", (a / b))
+print("Modulus Operator: ", a, "%", b, "=", (a % b))
+print("Exponent Operator: ", a, "^", b, "=", (a ** b))
+print("Floor Division Operator: ", a, "//", b, "=", (a // b))
