@@ -1,13 +1,13 @@
-for i in range(5):
+for i in range (5):
     for j in range (5):
-        if(i >= j):
+        if i == 2 or j == 2:
             print("*", end=" ")
         else:
             print("_", end=" ")
     print()
 
-# * _ _ _ _ 
-# * * _ _ _ 
-# * * * _ _
-# * * * * _
+# _ _ * _ _ 
+# _ _ * _ _ 
 # * * * * *
+# _ _ * _ _
+# _ _ * _ _
