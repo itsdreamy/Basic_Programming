@@ -1,12 +1,11 @@
 from students.validation import validate_student_id
-from students.validation import validate_score  # kalau kamu mau pakai validasi skor
-
+from students.validation import validate_score
 def assign_grade(student_id, course_id, score):
     """
     Append data to data/grades.txt
     Format: student_id,course_id,score
     """
-    # Validasi ID dan skor (opsional)
+    
     if not validate_student_id(student_id):
         print("Invalid Student ID!")
         return False

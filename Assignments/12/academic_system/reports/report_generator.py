@@ -3,12 +3,10 @@ from courses.course_manager import load_courses
 from grades.grade_manager import load_grades
 
 def generate_student_report(student_id):
-    # Load semua data
-    students = dict(load_students(as_dict=True))  # {id: name}
-    courses = dict(load_courses())                # {id: name}
-    grades = load_grades()                        # [(student_id, course_id, score), ...]
+    students = dict(load_students(as_dict=True))  
+    courses = dict(load_courses())
+    grades = load_grades()
 
-    # Cari student
     if student_id not in students:
         print("Student not found!")
         return
@@ -17,8 +15,7 @@ def generate_student_report(student_id):
     print("="*40)
     print(f"Academic Transcript for {student_name} ({student_id})")
     print("="*40)
-
-    # Ambil semua grade untuk student
+    
     student_grades = [(cid, score) for sid, cid, score in grades if sid == student_id]
 
     if not student_grades:

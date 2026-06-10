@@ -19,7 +19,7 @@ def load_courses():
         with open("data/courses.txt", "r") as f:
             for line in f:
                 line = line.strip()
-                if line:  # skip baris kosong
+                if line:
                     course_id, course_name = line.split(",", 1)
                     courses.append((course_id, course_name))
     except FileNotFoundError:
