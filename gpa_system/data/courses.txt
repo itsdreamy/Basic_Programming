@@ -1,0 +1,9 @@
+SubjectCode,SubjectName,SKS
+25IF12006, Discrete Mathematics, 3
+25IF12007, Linear Algebra, 3
+25IF12008, Database Systems, 3
+25IF12009, Programming Fundamentals, 4
+25IF12010, Operating Systems, 2
+25WN10002, Civic Education, 2
+25WU12002, Professional English, 2
+25WU12003, Kenusaputraan, 1
