@@ -15,9 +15,7 @@ def validate_score(score):
     Mengembalikan True jika valid, False jika tidak valid.
     """
     try:
-        # Ubah input text string dari console menjadi angka desimal/float
         score_num = float(score)
         return 0 <= score_num <= 100
     except (ValueError, TypeError):
-        # Jika user memasukkan huruf atau karakter aneh, tangkap error-nya di sini
         return False

@@ -1,0 +1,11 @@
+ID,nama,grade
+20250040087,Ahmad Rifai,A
+20250040088,Siti Aminah,B
+20250040089,Budi Santoso,A
+20250040090,Dewi Lestari,C
+20250040091,Eko Prasetyo,B
+20250040092,Fitriani,A
+20250040093,Hendra Wijaya,A
+20250040084,Indah Permata,B
+20250040095,Kevin Sanjaya,A
+20250040096,Lesti Kejora,C

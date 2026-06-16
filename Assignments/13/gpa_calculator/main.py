@@ -1,6 +1,5 @@
 import os
-from students.student_manager import add_student
-from courses.course_manager import add_course, load_courses
+from courses.course_manager import load_courses
 from grades.grade_manager import assign_grade
 from reports.report_generator import generate_gpa_report
 
@@ -10,30 +9,13 @@ def main():
 
     while True:
         print("\n=== ACADEMIC SYSTEM CONSOLE (PANDAS ENABLED) ===")
-        print("1. Add Student Data")
-        print("2. Add Course Data")
-        print("3. Input Student's Scores")
-        print("4. Calculate & Export GPA Report")
-        print("5. Leave")
+        print("1. Input Student's Scores")
+        print("2. Calculate & Export GPA Report")
+        print("3. Leave")
         
-        choice = input("Choose a Menu (1-5): ")
-        
-        if choice == '1':
-            sid = input("Student ID / NIM (E.g.: 20250040087): ")
-            name = input("Student's Name: ")
-            group = input("Class/Group (A/B): ")
-            add_student(sid, name, group)
-            
-        elif choice == '2':
-            code = input("Course Code (E.g.: 25IF12006): ")
-            name = input("Course Name: ")
-            sks = input("Credit Score: ")
-            if sks.isdigit():
-                add_course(code, name, int(sks))
-            else:
-                print("Credit Input Failed, Should be Integer!.")
+        choice = input("Choose a Menu (1-3): ")
                 
-        elif choice == '3':
+        if choice == '1':
             active_courses = load_courses()
             
             if not active_courses:
@@ -55,10 +37,10 @@ def main():
             
             print(f"\nSuccesfully Input Student's Score: {sid}!")
             
-        elif choice == '4':
+        elif choice == '2':
             generate_gpa_report()
             
-        elif choice == '5':
+        elif choice == '3':
             print("Program Stopped, Thank You!")
             break
         else:
